@@ -1,0 +1,48 @@
+<header class="hero-unit" id="banner">
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Select Tournament</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+</header>
+
+<!--<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h1 class="page-header">Features:</h1>
+      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
+        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}</a></li>
+      </ul>
+    </div>
+  </div>
+</div>-->
+<header class="hero-unit" id="banner">
+  <form name="tourney" ng-submit="$ctrl.addTourney(tourney)">
+    <div class="container">
+      <h1>Tournament Setup</h1>
+      <label for="TourneyName">Tournament Name</label>
+      <input type="text" name="name" ng-model="$ctrl.Tourneysetup.name"></input>
+      <br>
+      <!--<label for="StartDate">Start Date</label>
+      <input type="date" ng-model="tourneysetup.startdate" name="StartDate"></input>
+      <br>
+      <label for="EndDate">End Date</label>
+      <input type="date" ng-model="tourneysetup.enddate" name="EndDate"></input>
+      <br>
+      <label for="NumDays">Number of Days</label>
+      <input type="number" ng-model="tourneysetup.numdays" name="NumDays"></input>
+      <br>
+      <label for="MinBet">Minimum Bet</label>
+      <input type="number" ng-model="tourneysetup.minbet" name="MinBet"></input>
+      <br>
+      <label for="MaxBet">Maximum Bet</label>
+      <input type="number" ng-model="tourneysetup.maxbet" name="MaxBet"></input>
+      <br>-->
+    </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+          <button class="btn btn-primary" ng-click="reset()">Reset</button>
+    </form>
+</header>

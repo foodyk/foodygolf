@@ -1,0 +1,31 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Enter Bets</h1>
+        <label for="TeamToBet">Team to Bet</label>
+        <input type="text" name="TeamToBet" ng-model="bet.teamToBet" />
+        <br>
+        <label for="BetBy">Bet By</label>
+        <input type="text" name="BetBy" ng-model="bet.betBy"  />
+        <br>
+        <label for="BetAmount">Bet Amount</label>
+        <input type="number" name="BetAmount" ng-model="bet.betAmount"  />
+        <br>
+        <label for="DaysToBet">Days To Bet</label>
+        <select name="DaysToBet" style="width:225px;height:90x;color: #228B22;"ng-model="bet.daysBet" multiple>
+            <option value="Day1">Day 1</option>
+            <option value="Day2">Day 2</option>
+            <option value="Day3">Day 3</option>
+            <option value="All Days">All Days</option>
+        </select>
+        <br>
+        <label for="WPS">Bet Type</label>
+        <select name="WPS" style="width:225px;height:80px;color: #228B22;"ng-model="bet.waysBet" multiple>
+            <option value="Win">Win</option>
+            <option value="Place">Place</option>
+            <option value="Show">Show</option>
+            <option value="All Ways">All Ways</option>
+        </select>
+  </div>
+        <button class="btn btn-primary" ng-click="addnewbet()">Add</button>
+        <button class="btn btn-primary" ng-click="reset()">Reset</button>
+</header>

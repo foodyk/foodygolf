@@ -1,0 +1,16 @@
+<header class="hero-unit" id="banner">
+  <div class="container">
+    <h1>Enter Teams</h1>
+        <label for="TeamName">Team Name</label>
+        <input type="text" name="TeamName" ng-model="teams.teamname" />
+        <br>
+        <label for="Index">Combined Handicap</label>
+        <input type="text" name="Index" ng-model="teams.handicap"  />
+        <br>
+        <label for="Flight">Flight #</label>
+        <input type="number" name="Flight" ng-model="teams.Flight"  />
+        <br>
+  </div>
+        <button class="btn btn-primary" ng-click="addnewteam()">Add</button>
+        <button class="btn btn-primary" ng-click="reset()">Reset</button>
+</header>

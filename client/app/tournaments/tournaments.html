@@ -1,0 +1,27 @@
+<header class="hero-unit" id="banner">
+  <form name="tourney" ng-submit="$ctrl.addTourney(tourney)">
+    <div class="container">
+      <h1>Tournament Setup</h1>
+      <label for="TourneyName">Tournament Name</label>
+      <input type="text" name="name" ng-model="vm.Tourneysetup.name"></input>
+      <br>
+      <!--<label for="StartDate">Start Date</label>
+      <input type="date" ng-model="tourneysetup.startdate" name="StartDate"></input>
+      <br>
+      <label for="EndDate">End Date</label>
+      <input type="date" ng-model="tourneysetup.enddate" name="EndDate"></input>
+      <br>
+      <label for="NumDays">Number of Days</label>
+      <input type="number" ng-model="tourneysetup.numdays" name="NumDays"></input>
+      <br>
+      <label for="MinBet">Minimum Bet</label>
+      <input type="number" ng-model="tourneysetup.minbet" name="MinBet"></input>
+      <br>
+      <label for="MaxBet">Maximum Bet</label>
+      <input type="number" ng-model="tourneysetup.maxbet" name="MaxBet"></input>
+      <br>-->
+    </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+          <button class="btn btn-primary" ng-click="reset()">Reset</button>
+    </form>
+</header>
